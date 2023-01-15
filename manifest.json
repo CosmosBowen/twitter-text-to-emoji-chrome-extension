@@ -20,7 +20,18 @@
             "128": "images/icon-128.png"
         }
     },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/new_content.js"
+            ],
+            "matches": [
+                "https://twitter.com/*"
+            ]
+        }
+    ],
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "scripting"
     ]
 }
