@@ -10,11 +10,12 @@ const observer = new MutationObserver(() => {
             let each_tweet_text = all_tweet_text[i];
             const all_content_for_each_tweet = each_tweet_text.querySelectorAll('.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0');
             if (all_content_for_each_tweet.length > 0) {
-                console.log("it has ", all_content_for_each_tweet.length, "span!");
+                var text_each_tweet = "";
                 for (let j = 0; j < all_content_for_each_tweet.length; j++) {
                     let each_content_for_each_tweet = all_content_for_each_tweet[j];
-                    console.log("small text:", each_content_for_each_tweet.textContent);
+                    text_each_tweet += each_content_for_each_tweet.textContent;
                 }
+                console.log("text_each_tweet:", text_each_tweet);
             }
         }
         // all_tweet_text.forEach(function (each_tweet_text) {
