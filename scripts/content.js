@@ -17,7 +17,7 @@ observer.observe(observer.parent, observer.parameters);
 // module.exports = myModule;
 function start() {
     all_tweet = document.querySelectorAll('[data-testid="tweet"]');
-    console.log("ssssssssss! ", all_tweet.length);
+    console.log("all_tweet.length: ", all_tweet.length);
     // const all_tweet_text = all_tweet.querySelectorAll('[data-testid="tweetText"]');
     if (all_tweet.length > 0) {
         console.log("tweet texts are prepared! ", all_tweet.length);
@@ -58,8 +58,8 @@ function add_text() {
             //     method: 'post',
             //     url: 'https://api.aylien.com/api/v1/sentiment',
             //     headers: {
-            //         'X-AYLIEN-TextAPI-Application-ID': 'your-application-id',
-            //         'X-AYLIEN-TextAPI-Application-Key': 'your-application-key'
+            //         'X-AYLIEN-TextAPI-Application-ID': '780d0eaa',
+            //         'X-AYLIEN-TextAPI-Application-Key': '021f7b8414e22ea23e9a8c026e46602b'
             //     },
             //     data: {
             //         'text': text_each_tweet
